@@ -1,0 +1,23 @@
+PROGRAM ALUNO;
+USES CRT;
+TYPE
+    NOTA=ARRAY[1..5] OF INTEGER;
+    NOME=ARRAY[1..5] OF STRING;
+VAR
+   A:NOTA;
+   X:NOME;
+   I:INTEGER;
+BEGIN
+     CLRSCR;
+     WRITELN('ENTRE COM AS 5 NOTAS');
+     FOR I:=1 TO 5 DO
+     READLN(A[I]);
+     WRITELN('ENTRE COM OS 5 NOMES');
+     FOR I:=1 TO 5 DO
+     READLN(X[I]);
+     FOR I:=1 TO 5 DO
+     IF(A[I] < 5)
+     THEN
+     WRITELN('NOTA: ',A[I],' ALUNO: ',X[I]);
+READKEY;
+END.
